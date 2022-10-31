@@ -6,7 +6,7 @@
 #include "nimconfig.h"
 #if defined(CONFIG_BT_NIMBLE_ROLE_PERIPHERAL)
 
-#include "BleConnectionStatus.h"
+#include "BleKeyBoardConnectionStatus.h"
 #include "NimBLEHIDDevice.h"
 #include "NimBLECharacteristic.h"
 #include "Print.h"
@@ -92,7 +92,7 @@ typedef struct
 class BleKeyboard : public Print
 {
 private:
-  BleConnectionStatus* connectionStatus;
+  BleKeyBoardConnectionStatus* connectionStatus;
   NimBLEHIDDevice* hid;
   NimBLECharacteristic* inputKeyboard;
   NimBLECharacteristic* outputKeyboard;

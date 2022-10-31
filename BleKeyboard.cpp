@@ -6,7 +6,7 @@
 #include <driver/adc.h>
 #include "sdkconfig.h"
 
-#include "BleConnectionStatus.h"
+#include "BleKeyBoardConnectionStatus.h"
 #include "KeyboardOutputCallbacks.h"
 #include "BleKeyboard.h"
 
@@ -93,7 +93,7 @@ BleKeyboard::BleKeyboard(std::string deviceName, std::string deviceManufacturer,
   this->deviceName = deviceName;
   this->deviceManufacturer = deviceManufacturer;
   this->batteryLevel = batteryLevel;
-  this->connectionStatus = new BleConnectionStatus();
+  this->connectionStatus = new BleKeyBoardConnectionStatus();
 }
 
 void BleKeyboard::begin(void)
