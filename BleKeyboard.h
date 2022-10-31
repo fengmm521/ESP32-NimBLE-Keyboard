@@ -89,6 +89,8 @@ typedef struct
   uint8_t keys[6];
 } KeyReport;
 
+class BleKeyBoardConnectionStatus;
+
 class BleKeyboard : public Print
 {
 private:
